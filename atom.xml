@@ -39,7 +39,7 @@
  GitHub 地址 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2xqbFZpbmsvTGluc3BpcmVyRGVtbw==&#34;&gt;点此链接&lt;/span&gt;&lt;br /&gt;
 &lt;img data-src=&#34;https://i.postimg.cc/qB5rc4RT/2.png&#34; alt=&#34;GitHub&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;据我所知，目前华为系平板安装三方软件还需拆机短接主板，其他 (联想等) 可直接解锁 bl 锁&lt;br /&gt;
+&lt;p&gt;据我所知，目前华为系管控平板安装三方软件还需拆机短接主板，其他 (联想等) 可直接解锁 bl 锁&lt;br /&gt;
 华为系管控机拆机短接方案详见下文&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;flinspirer&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flinspirer&#34;&gt;#&lt;/a&gt; FLinspirer&lt;/h1&gt;
@@ -49,6 +49,38 @@
 &lt;p&gt;这个好像还没人测试过，华为系平板可尝试搭配下文的网络渗透类 Xerosploit 食用 (联想随便)&lt;br /&gt;
 (这个功能写得还挺丰富的)&lt;/p&gt;
 &lt;/div&gt;
+&lt;h1 id=&#34;网络渗透类xerosploit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络渗透类xerosploit&#34;&gt;#&lt;/a&gt; 网络渗透类 Xerosploit&lt;/h1&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;Xerosploit 是一款强大的渗透测试工具包，这里主要讲述如何使用 xerosploit 强制改变平板下载的文件&lt;br /&gt;
+ (该部分没有配图，自行操作即可)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;首先进入&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cua2FsaS5vcmcv&#34;&gt; Kali linux 官网&lt;/span&gt;下载 Kali Linux 虚拟机版本&lt;br /&gt;
+打开 Shell&lt;br /&gt;
+ 输入&lt;br /&gt;
+ &#39;&#39;&#39;bash&lt;br /&gt;
+git clone &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==&#34;&gt;https://github.com/LionSec/xerosploit&lt;/span&gt;&lt;br /&gt;
+cd xerosploit &amp;amp;&amp;amp; sudo python &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2luc3RhbGwucHk=&#34;&gt;install.py&lt;/span&gt;&lt;br /&gt;
+sudo xerosploit&lt;br /&gt;
+clone &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==&#34;&gt;https://github.com/LionSec/xerosploit&lt;/span&gt;&lt;br /&gt;
+&#39;&#39;&#39;&lt;br /&gt;
+&#39;&#39;&#39;bash&lt;br /&gt;
+cd xerosploit &amp;amp;&amp;amp; sudo python &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2luc3RhbGwucHk=&#34;&gt;install.py&lt;/span&gt;&lt;br /&gt;
+&#39;&#39;&#39;&lt;br /&gt;
+ 按照步骤安装&lt;br /&gt;
+安装成功后&lt;br /&gt;
+ &#39;&#39;&#39;bash&lt;br /&gt;
+sudo xerosploit&lt;br /&gt;
+&#39;&#39;&#39;&lt;br /&gt;
+ 在 root 文件夹中放入你想下载的文件 (如更改过签名的 apk)&lt;br /&gt;
+ 使用 scan 命令进行扫描&lt;br /&gt;
+输入选定的被攻击对象 (&lt;ins&gt;管控平板会显示为未知设备&lt;/ins&gt;)&lt;br /&gt;
+ 依次运行 rdownload,run,apk, /root/xxx.apk&lt;/p&gt;
+&lt;h1 id=&#34;本机管理员密码推算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本机管理员密码推算&#34;&gt;#&lt;/a&gt; 本机管理员密码推算&lt;/h1&gt;
+&lt;p&gt;GitHub 地址&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1lvdW5nVG9kYXkvcmM=&#34;&gt;点此链接&lt;/span&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2023/11/06/R9p6ym1gZVEjLMH.jpg&#34; alt=&#34;本机管理员&#34; /&gt;&lt;br /&gt;
+ &#39;&#39;&#39;info&lt;br /&gt;
+ 依据设备 MAC 码来推算本机管理员密码，不过现在大多数平板都改为二维码登陆了&lt;br /&gt;
+ &#39;&#39;&#39;&lt;/p&gt;
 </content>
         <category term="领创" />
         <category term="破解" />

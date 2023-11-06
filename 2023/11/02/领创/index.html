@@ -76,7 +76,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>212</span>
+    <span>751</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ Ayano Mao = Hello Hexo7 = 1999</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?2008"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?732322"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?332092"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?794610"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?673841"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?772929"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?363071"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?928095"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?265089"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?674630"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?327526"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?534757"></li>
         </ul>
       </div>
     </header>
@@ -175,7 +175,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
  GitHub 地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xqbFZpbmsvTGluc3BpcmVyRGVtbw==">点此链接</span><br />
 <img data-src="https://i.postimg.cc/qB5rc4RT/2.png" alt="GitHub" /></p>
 <div class="note info">
-<p>据我所知，目前华为系平板安装三方软件还需拆机短接主板，其他 (联想等) 可直接解锁 bl 锁<br />
+<p>据我所知，目前华为系管控平板安装三方软件还需拆机短接主板，其他 (联想等) 可直接解锁 bl 锁<br />
 华为系管控机拆机短接方案详见下文</p>
 </div>
 <h1 id="flinspirer"><a class="anchor" href="#flinspirer">#</a> FLinspirer</h1>
@@ -185,6 +185,38 @@ Ayano Mao = Hello Hexo7 = 1999</title>
 <p>这个好像还没人测试过，华为系平板可尝试搭配下文的网络渗透类 Xerosploit 食用 (联想随便)<br />
 (这个功能写得还挺丰富的)</p>
 </div>
+<h1 id="网络渗透类xerosploit"><a class="anchor" href="#网络渗透类xerosploit">#</a> 网络渗透类 Xerosploit</h1>
+<div class="note primary">
+<p>Xerosploit 是一款强大的渗透测试工具包，这里主要讲述如何使用 xerosploit 强制改变平板下载的文件<br />
+ (该部分没有配图，自行操作即可)</p>
+</div>
+<p>首先进入<span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcv"> Kali linux 官网</span>下载 Kali Linux 虚拟机版本<br />
+打开 Shell<br />
+ 输入<br />
+ '''bash<br />
+git clone <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==">https://github.com/LionSec/xerosploit</span><br />
+cd xerosploit &amp;&amp; sudo python <span class="exturl" data-url="aHR0cDovL2luc3RhbGwucHk=">install.py</span><br />
+sudo xerosploit<br />
+clone <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==">https://github.com/LionSec/xerosploit</span><br />
+'''<br />
+'''bash<br />
+cd xerosploit &amp;&amp; sudo python <span class="exturl" data-url="aHR0cDovL2luc3RhbGwucHk=">install.py</span><br />
+'''<br />
+ 按照步骤安装<br />
+安装成功后<br />
+ '''bash<br />
+sudo xerosploit<br />
+'''<br />
+ 在 root 文件夹中放入你想下载的文件 (如更改过签名的 apk)<br />
+ 使用 scan 命令进行扫描<br />
+输入选定的被攻击对象 (<ins>管控平板会显示为未知设备</ins>)<br />
+ 依次运行 rdownload,run,apk, /root/xxx.apk</p>
+<h1 id="本机管理员密码推算"><a class="anchor" href="#本机管理员密码推算">#</a> 本机管理员密码推算</h1>
+<p>GitHub 地址<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1lvdW5nVG9kYXkvcmM=">点此链接</span><br />
+<img data-src="https://s2.loli.net/2023/11/06/R9p6ym1gZVEjLMH.jpg" alt="本机管理员" /><br />
+ '''info<br />
+ 依据设备 MAC 码来推算本机管理员密码，不过现在大多数平板都改为二维码登陆了<br />
+ '''</p>
 
       <div class="tags">
           <a href="/tags/%E9%A2%86%E5%88%9B/" rel="tag"><i class="ic i-tag"></i> 领创</a>
@@ -201,7 +233,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-11-06 22:00:23" itemprop="dateModified" datetime="2023-11-06T22:00:23+08:00">2023-11-06</time>
+    <time title="修改时间：2023-11-06 23:18:28" itemprop="dateModified" datetime="2023-11-06T23:18:28+08:00">2023-11-06</time>
   </span>
   <span id="2023/11/02/领创/" class="item leancloud_visitors" data-flag-title="领创/科大讯飞平板管控破解/伪破解方案与工具汇总" title="阅读次数">
       <span class="icon">
@@ -266,7 +298,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
     <div class="item right">
       
 
-  <a href="/2023/11/02/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?478752" title="Hello World">
+  <a href="/2023/11/02/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?528840" title="Hello World">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Hello World</h3>
@@ -288,7 +320,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linspirer-hunter"><span class="toc-number">1.</span> <span class="toc-text"> Linspirer Hunter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flinspirer"><span class="toc-number">2.</span> <span class="toc-text"> FLinspirer</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linspirer-hunter"><span class="toc-number">1.</span> <span class="toc-text"> Linspirer Hunter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flinspirer"><span class="toc-number">2.</span> <span class="toc-text"> FLinspirer</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E7%B1%BBxerosploit"><span class="toc-number">3.</span> <span class="toc-text"> 网络渗透类 Xerosploit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E6%9C%BA%E7%AE%A1%E7%90%86%E5%91%98%E5%AF%86%E7%A0%81%E6%8E%A8%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text"> 本机管理员密码推算</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -403,19 +435,19 @@ Ayano Mao = Hello Hexo7 = 1999</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E7%A0%81/" title="分类于 数码">数码</a>
 </div>
 
-    <span><a href="/2023/11/02/%E9%A2%86%E5%88%9B/" title="领创&#x2F;科大讯飞平板管控破解&#x2F;伪破解方案与工具汇总">领创/科大讯飞平板管控破解/伪破解方案与工具汇总</a></span>
+    <span><a href="/2023/11/02/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E7%A0%81/" title="分类于 数码">数码</a>
 </div>
 
-    <span><a href="/2023/11/02/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/11/02/%E9%A2%86%E5%88%9B/" title="领创&#x2F;科大讯飞平板管控破解&#x2F;伪破解方案与工具汇总">领创/科大讯飞平板管控破解/伪破解方案与工具汇总</a></span>
   </li>
 
   </ul>
