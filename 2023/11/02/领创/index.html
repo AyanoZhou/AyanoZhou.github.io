@@ -76,7 +76,7 @@ Ayano Mao = Hello Hexo7 = 1999</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>751</span>
+    <span>1k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ Ayano Mao = Hello Hexo7 = 1999</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?363071"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?928095"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?265089"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?674630"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?327526"></li>
-          <li class="item" data-background-image="https://www.dmoe.cc/random.php?534757"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?810370"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?695328"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?20883"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?494761"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?294383"></li>
+          <li class="item" data-background-image="https://www.dmoe.cc/random.php?702743"></li>
         </ul>
       </div>
     </header>
@@ -168,22 +168,24 @@ Ayano Mao = Hello Hexo7 = 1999</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="linspirer-hunter"><a class="anchor" href="#linspirer-hunter">#</a> Linspirer Hunter</h1>
-<p>一个稳定运行了两年的领创平板管理的的解决 (破解) 方案，破解成功率高<br />
+    <div class="note primary">
+<p>领创 / 科大讯飞平板管控具有科大讯飞、北京四中、271 教育集团等多种版本，该篇博文致力于收集与领创 / 科大讯飞平板管控破解相关的工具与教程<br />
+同时也感谢大庆十堰、哈三中、百京四中等同志提供的思路与方法</p>
+</div>
+<h1 id="linspirer-hunter"><a class="anchor" href="#linspirer-hunter">#</a> Linspirer Hunter</h1>
+<p>一个稳定运行了两年的领创平板管理的的解决 (破解) 方案<br />
 官方发布地址 <span class="exturl" data-url="aHR0cHM6Ly95b3VuZ3RvZGF5LmdpdGh1Yi5pby8=">点此链接</span><br />
 <img data-src="https://i.postimg.cc/JnTL2W5j/1.png" alt="官方发布页" /><br />
  GitHub 地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xqbFZpbmsvTGluc3BpcmVyRGVtbw==">点此链接</span><br />
 <img data-src="https://i.postimg.cc/qB5rc4RT/2.png" alt="GitHub" /></p>
 <div class="note info">
-<p>据我所知，目前华为系管控平板安装三方软件还需拆机短接主板，其他 (联想等) 可直接解锁 bl 锁<br />
-华为系管控机拆机短接方案详见下文</p>
+<p>装上就是英雄，也是唯一的门槛</p>
 </div>
 <h1 id="flinspirer"><a class="anchor" href="#flinspirer">#</a> FLinspirer</h1>
-<p>GitHub 地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0ZMaW5zcGlyZXIvRkxpbnNwaXJlcg==">点此链接</span><br />
-<img data-src="https://i.postimg.cc/3NVH3C6R/3.png" alt="FLinspirer" /></p>
+<p>GitHub 地址 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0ZMaW5zcGlyZXIvRkxpbnNwaXJlcg==">点此链接</span></p>
 <div class="note info">
-<p>这个好像还没人测试过，华为系平板可尝试搭配下文的网络渗透类 Xerosploit 食用 (联想随便)<br />
-(这个功能写得还挺丰富的)</p>
+<p>(图有问题所以删了)<br />
+ 这个好像没人测试过，功能写得还挺丰富的，华为系平板可尝试搭配下文的网络渗透类 Xerosploit 食用 (联想随便)</p>
 </div>
 <h1 id="网络渗透类xerosploit"><a class="anchor" href="#网络渗透类xerosploit">#</a> 网络渗透类 Xerosploit</h1>
 <div class="note primary">
@@ -193,30 +195,41 @@ Ayano Mao = Hello Hexo7 = 1999</title>
 <p>首先进入<span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcv"> Kali linux 官网</span>下载 Kali Linux 虚拟机版本<br />
 打开 Shell<br />
  输入<br />
- '''bash<br />
-git clone <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==">https://github.com/LionSec/xerosploit</span><br />
-cd xerosploit &amp;&amp; sudo python <span class="exturl" data-url="aHR0cDovL2luc3RhbGwucHk=">install.py</span><br />
-sudo xerosploit<br />
-clone <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpb25TZWMveGVyb3NwbG9pdA==">https://github.com/LionSec/xerosploit</span><br />
-'''<br />
-'''bash<br />
-cd xerosploit &amp;&amp; sudo python <span class="exturl" data-url="aHR0cDovL2luc3RhbGwucHk=">install.py</span><br />
-'''<br />
- 按照步骤安装<br />
-安装成功后<br />
- '''bash<br />
-sudo xerosploit<br />
-'''<br />
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/LionSec/xerosploit</span><br><span class="line"><span class="built_in">cd</span> xerosploit &amp;&amp; sudo python install.py</span><br><span class="line">sudo xerosploit</span><br><span class="line"><span class="built_in">clone</span> https://github.com/LionSec/xerosploit</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">cd</span> xerosploit &amp;&amp; sudo python install.py</span><br><span class="line">```    </span><br><span class="line">按照步骤安装</span><br><span class="line">安装成功后</span><br><span class="line">```bash</span><br><span class="line">    sudo xerosploit</span><br></pre></td></tr></table></figure><br />
  在 root 文件夹中放入你想下载的文件 (如更改过签名的 apk)<br />
  使用 scan 命令进行扫描<br />
 输入选定的被攻击对象 (<ins>管控平板会显示为未知设备</ins>)<br />
  依次运行 rdownload,run,apk, /root/xxx.apk</p>
 <h1 id="本机管理员密码推算"><a class="anchor" href="#本机管理员密码推算">#</a> 本机管理员密码推算</h1>
 <p>GitHub 地址<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1lvdW5nVG9kYXkvcmM=">点此链接</span><br />
-<img data-src="https://s2.loli.net/2023/11/06/R9p6ym1gZVEjLMH.jpg" alt="本机管理员" /><br />
- '''info<br />
- 依据设备 MAC 码来推算本机管理员密码，不过现在大多数平板都改为二维码登陆了<br />
- '''</p>
+<img data-src="https://s2.loli.net/2023/11/06/R9p6ym1gZVEjLMH.jpg" alt="本机管理员" /></p>
+<div class="note info">
+<p>依据设备 MAC 码来推算本机管理员密码，现在大多数平板都改为二维码登陆了</p>
+</div>
+<h1 id="linspirerappstoreenumerator"><a class="anchor" href="#linspirerappstoreenumerator">#</a> LinspirerAppStoreEnumerator</h1>
+<p>GitHub 地址<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0YtVW5jdGlvbi9MaW5zcGlyZXJBcHBTdG9yZUVudW1lcmF0b3I=">点此链接</span><br />
+一个基于 Python 的获取指定 ID 区间内领创应用商店 app 包名的工具</p>
+<div class="note info">
+<p>不多介绍</p>
+</div>
+<h1 id="科大讯飞平板刷机包资源站"><a class="anchor" href="#科大讯飞平板刷机包资源站">#</a> 科大讯飞平板刷机包资源站</h1>
+<p>官方发布页面<span class="exturl" data-url="aHR0cHM6Ly9tYWdpc2stcm9vdC5naXRodWIuaW8v">点此链接</span></p>
+<div class="note info">
+<p>线刷仅限联想，华为可尝试卡刷 (卡刷功能只有区域管理员可禁用，成功概率大)</p>
+</div>
+<h1 id="联想自助解锁bootloader"><a class="anchor" href="#联想自助解锁bootloader">#</a> 联想自助解锁 bootloader</h1>
+<p>GitHub 地址<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xzcGRlbW8tdGVhbS9MZW5vdm90YWJ1bmxvY2s=">点此链接</span></p>
+<div class="note info">
+<p>内有教程，也不多赘述</p>
+</div>
+<h1 id="华为c3开机向导卡掉领创桌面"><a class="anchor" href="#华为c3开机向导卡掉领创桌面">#</a> 华为 C3 开机向导卡掉领创桌面</h1>
+<p>在开机向导界面狂点下一步，有时候可以下拉，这时候没有激活领创，进入桌面设置，点击系统桌面</p>
+<div class="tab" data-id="info" data-title="">
+<p>感谢十堰学子的口述<br />
+开机向导可以使用卡刷的方法卡出来<br />
+:::</p>
+</div>
 
       <div class="tags">
           <a href="/tags/%E9%A2%86%E5%88%9B/" rel="tag"><i class="ic i-tag"></i> 领创</a>
@@ -233,7 +246,7 @@ sudo xerosploit<br />
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-11-06 23:18:28" itemprop="dateModified" datetime="2023-11-06T23:18:28+08:00">2023-11-06</time>
+    <time title="修改时间：2023-11-07 00:08:09" itemprop="dateModified" datetime="2023-11-07T00:08:09+08:00">2023-11-07</time>
   </span>
   <span id="2023/11/02/领创/" class="item leancloud_visitors" data-flag-title="领创/科大讯飞平板管控破解/伪破解方案与工具汇总" title="阅读次数">
       <span class="icon">
@@ -296,14 +309,6 @@ sudo xerosploit<br />
     <div class="item left">
     </div>
     <div class="item right">
-      
-
-  <a href="/2023/11/02/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?528840" title="Hello World">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Hello World</h3>
-  </a>
-
     </div>
 </div>
 
@@ -320,7 +325,7 @@ sudo xerosploit<br />
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linspirer-hunter"><span class="toc-number">1.</span> <span class="toc-text"> Linspirer Hunter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flinspirer"><span class="toc-number">2.</span> <span class="toc-text"> FLinspirer</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E7%B1%BBxerosploit"><span class="toc-number">3.</span> <span class="toc-text"> 网络渗透类 Xerosploit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E6%9C%BA%E7%AE%A1%E7%90%86%E5%91%98%E5%AF%86%E7%A0%81%E6%8E%A8%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text"> 本机管理员密码推算</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linspirer-hunter"><span class="toc-number">1.</span> <span class="toc-text"> Linspirer Hunter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flinspirer"><span class="toc-number">2.</span> <span class="toc-text"> FLinspirer</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E7%B1%BBxerosploit"><span class="toc-number">3.</span> <span class="toc-text"> 网络渗透类 Xerosploit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E6%9C%BA%E7%AE%A1%E7%90%86%E5%91%98%E5%AF%86%E7%A0%81%E6%8E%A8%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text"> 本机管理员密码推算</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linspirerappstoreenumerator"><span class="toc-number">5.</span> <span class="toc-text"> LinspirerAppStoreEnumerator</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E%E5%B9%B3%E6%9D%BF%E5%88%B7%E6%9C%BA%E5%8C%85%E8%B5%84%E6%BA%90%E7%AB%99"><span class="toc-number">6.</span> <span class="toc-text"> 科大讯飞平板刷机包资源站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%81%94%E6%83%B3%E8%87%AA%E5%8A%A9%E8%A7%A3%E9%94%81bootloader"><span class="toc-number">7.</span> <span class="toc-text"> 联想自助解锁 bootloader</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BAc3%E5%BC%80%E6%9C%BA%E5%90%91%E5%AF%BC%E5%8D%A1%E6%8E%89%E9%A2%86%E5%88%9B%E6%A1%8C%E9%9D%A2"><span class="toc-number">8.</span> <span class="toc-text"> 华为 C3 开机向导卡掉领创桌面</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -338,7 +343,7 @@ sudo xerosploit<br />
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">2</span>
+        <span class="count">1</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -431,15 +436,6 @@ sudo xerosploit<br />
 <div class="rpost pjax">
   <h2>随机文章</h2>
   <ul>
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/11/02/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
       
   <li class="item">
     
