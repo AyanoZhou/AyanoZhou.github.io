@@ -5,6 +5,18 @@
     "home_page_url": "https://AyanoZhou.github.io",
     "items": [
         {
+            "id": "https://ayanozhou.github.io/2023/11/02/000/",
+            "url": "https://ayanozhou.github.io/2023/11/02/000/",
+            "title": "领创/科大讯飞平板管控破解/伪破解方案与工具汇总",
+            "date_published": "2023-11-02T11:13:17.621Z",
+            "content_html": "<h1 id=\"科大讯飞平板刷机包资源站\"><a class=\"anchor\" href=\"#科大讯飞平板刷机包资源站\">#</a> 科大讯飞平板刷机包资源站</h1>\n<p>官方发布页面<span class=\"exturl\" data-url=\"aHR0cHM6Ly9tYWdpc2stcm9vdC5naXRodWIuaW8v\">点此链接</span></p>\n<div class=\"note info\">\n<p>线刷仅限联想，华为可尝试卡刷 (卡刷功能只有区域管理员可禁用，成功概率大)</p>\n</div>\n<h1 id=\"联想自助解锁bootloader\"><a class=\"anchor\" href=\"#联想自助解锁bootloader\">#</a> 联想自助解锁 bootloader</h1>\n<p>GitHub 地址<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL0xzcGRlbW8tdGVhbS9MZW5vdm90YWJ1bmxvY2s=\">点此链接</span></p>\n<div class=\"note info\">\n<p>内有教程，也不多赘述</p>\n</div>\n<h1 id=\"华为c3开机向导卡掉领创桌面\"><a class=\"anchor\" href=\"#华为c3开机向导卡掉领创桌面\">#</a> 华为 C3 开机向导卡掉领创桌面</h1>\n<p>在开机向导界面狂点下一步，有时候可以下拉，这时候没有激活领创，进入桌面设置，点击系统桌面</p>\n<div class=\"note info\">\n<p>感谢十堰学子的口述<br />\n开机向导可以使用卡刷的方法卡出来</p>\n</div>\n",
+            "tags": [
+                "领创",
+                "破解",
+                "工具"
+            ]
+        },
+        {
             "id": "https://ayanozhou.github.io/2023/11/02/%E9%A2%86%E5%88%9B/",
             "url": "https://ayanozhou.github.io/2023/11/02/%E9%A2%86%E5%88%9B/",
             "title": "领创/科大讯飞平板管控破解/伪破解方案与工具汇总",
