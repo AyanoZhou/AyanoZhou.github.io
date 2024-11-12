@@ -3,9 +3,9 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>AyanoMao</title>
+    <title>AyanoMaoの小窝</title>
     <meta name="author" content="AyanoMao" />
-    <meta name="description" content="AyanoMao Blog" />
+    <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
@@ -61,7 +61,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>AYANOMAO</span>
+            <span>AYANOMAOの小窝</span>
         </a>
         
         <a href="/">
@@ -93,7 +93,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;AYANOMAO</span>
+            <span>&emsp;AYANOMAOの小窝</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -165,9 +165,9 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>AyanoMao</h1>
-                <h3>AyanoMao Blog</h3>
-                <h5>AyanoMao Blog</h5>
+                <h1>AyanoMaoの小窝</h1>
+                <h3>What......</h3>
+                <h5></h5>
             </div>
         </span>
     </div>
@@ -182,9 +182,18 @@
 
 <div class="post">
     <a href="/2024/11/11/hello-world/">
-        <h2 class="post-title">Hello World</h2>
+        <h2 class="post-title">第不知多少第一篇博客</h2>
     </a>
     <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E9%97%B2%E8%81%8A/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                闲聊
+            </a>
+        </span>
         
         <span class="date">
             <span class="icon">
@@ -198,26 +207,23 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <p>已经建过不下5个博客网站了，每次都草草而终，感觉高中也没有精力来运营博客，哎……<br>这篇博客就当是我正式写博客以来的第一篇博客吧</p>
 
             
         </div>
     </div>
     <div class="post-tags">
         
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
         
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #ff7d73">闲聊</a>
+        </span>
         
     </div>
     <a href="/2024/11/11/hello-world/" class="go-post">阅读全文</a>
@@ -247,14 +253,34 @@
 
         </div>
         
-        
-        <div class="friend-links">
+        <div class="icon-links">
             
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://github.com/arukione">
+                    <i
+                        class="fa- fa- fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://twitter.com/korilin_dev">
+                    <i
+                        class="fa- fa- fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=333601794">
+                    <i
+                        class="fa- fa- fa-fw"
+                    ></i>
+                </a>
+            </span>
             
         </div>
+        
         
     </div>
 </div>
@@ -267,7 +293,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2024 AyanoMao
+            2024 - 2024 AyanoMaoの小窝
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
@@ -276,6 +302,13 @@
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
             <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+        <div>
+            备案号：
+            
+            萌ICP备520131号
+            
         </div>
         
     </div>

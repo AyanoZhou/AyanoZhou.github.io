@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | AyanoMaoの小窝</title>
+    <title>About | AyanoMaoの小窝</title>
     <meta name="author" content="AyanoMao" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -40,7 +40,9 @@
 
 
 
-<script src="/js/lib/search.js"></script>
+
+
+
 
 
 
@@ -152,52 +154,47 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
+            <div class="article">
+    <div>
+        <h1>About</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/11/12
+        </span>
         
-        <div class="timeline" data-title="第不知多少第一篇博客">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/11/11</div>
-                <a href="/2024/11/11/hello-world/">
-                    <h3>第不知多少第一篇博客</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E9%97%B2%E8%81%8A/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            闲聊
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #03a9f4">
-                                闲聊
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h1 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h1><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>账号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>QQ</td>
+<td>1150454098</td>
+</tr>
+<tr>
+<td>Email</td>
+<td><a href="mailto:&#x41;&#121;&#97;&#110;&#x6f;&#x2e;&#119;&#101;&#x69;&#122;&#x68;&#111;&#117;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#x41;&#121;&#97;&#110;&#x6f;&#x2e;&#119;&#101;&#x69;&#122;&#x68;&#111;&#117;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a></td>
+</tr>
+</tbody></table>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -235,6 +232,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
