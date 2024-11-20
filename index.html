@@ -182,16 +182,16 @@
 
 <div class="post">
     <a href="/2024/11/16/Unity%E5%AD%A6%E4%B9%A0%EF%BC%9ACsharp%E5%AD%A6%E4%B9%A01/">
-        <h2 class="post-title">Unity学习：Csharp学习1</h2>
+        <h2 class="post-title">C++学习Day1</h2>
     </a>
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/Csharp/">
+            <a href="/categories/C/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                Csharp
+                C++
             </a>
         </span>
         
@@ -207,14 +207,26 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><pre><code>using System;
-class Hello
-&#123; 
-    static void Main()
-    &#123;
-        Console.WriteLine(&quot;Hello&quot;);
-    &#125;
- &#125;
+            <h1 id="First-Cpp"><a href="#First-Cpp" class="headerlink" title="First.Cpp"></a>First.Cpp</h1><pre><code class="C++">#include  &lt;iostream&gt; //预处理器将iostream文件的内容添加到程序中
+int main(void) //函数头 
+&#123; //函数体
+    using namespace std; 
+    cout &lt;&lt; &quot;First&quot;; // &lt;&lt;表示把字符串发送给cout
+    cout &lt;&lt; endl; //控制符endl 表示重启一行，旧式方法 /n
+    cout &lt;&lt; &quot;C++&quot; &lt;&lt; endl;
+
+    int carrots;
+
+    carrots  = 25;
+    cout &lt;&lt; &quot;I have &quot;;
+    cout &lt;&lt; carrots;
+    cout &lt;&lt; &quot; carrots&quot;;
+    cout &lt;&lt; endl;
+    carrots = carrots - 1;
+    cout &lt;&lt; &quot;Crunch,crunch.Now I have &quot; &lt;&lt; carrots &lt;&lt; &quot; carrots.&quot; &lt;&lt; endl;
+
+    return 0;
+&#125;
 </code></pre>
 
             
@@ -230,12 +242,7 @@ class Hello
         
         <span class="tag">
             
-            <a href="/tags/Csharp/" style="color: #00a596">Csharp</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/Unity/" style="color: #03a9f4">Unity</a>
+            <a href="/tags/C/" style="color: #00bcd4">C++</a>
         </span>
         
     </div>
@@ -284,7 +291,7 @@ class Hello
         
         <span class="tag">
             
-            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #ff7d73">闲聊</a>
+            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #03a9f4">闲聊</a>
         </span>
         
     </div>
