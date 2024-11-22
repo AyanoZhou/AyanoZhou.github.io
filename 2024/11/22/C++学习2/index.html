@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>C++学习Day1 | AyanoMaoの小窝</title>
+    <title>C++学习2 | AyanoMaoの小窝</title>
     <meta name="author" content="AyanoMao" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -156,14 +156,14 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>C++学习Day1</h1>
+        <h1>C++学习2</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2024/11/16
+            2024/11/22
         </span>
         
         <span class="category">
@@ -184,7 +184,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/C/" style="color: #03a9f4">
+                <a href="/tags/C/" style="color: #00a596">
                     C++
                 </a>
             </span>
@@ -194,24 +194,20 @@
     </div>
     
     <div class="content" v-pre>
-        <h1 id="First-Cpp"><a href="#First-Cpp" class="headerlink" title="First.Cpp"></a>First.Cpp</h1><pre><code class="C++">#include  &lt;iostream&gt; //预处理器将iostream文件的内容添加到程序中
-int main(void) //函数头 
-&#123; //函数体
-    using namespace std; 
-    cout &lt;&lt; &quot;First&quot;; // &lt;&lt;表示把字符串发送给cout
-    cout &lt;&lt; endl; //控制符endl 表示重启一行，旧式方法 /n
-    cout &lt;&lt; &quot;C++&quot; &lt;&lt; endl;
+        <h1 id="Learn2-cpp"><a href="#Learn2-cpp" class="headerlink" title="Learn2.cpp"></a>Learn2.cpp</h1><pre><code class="C++">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
 
-    int carrots;
+int main()
+&#123;
+    using namespace std;
 
-    carrots  = 25;
-    cout &lt;&lt; &quot;I have &quot;;
-    cout &lt;&lt; carrots;
-    cout &lt;&lt; &quot; carrots&quot;;
-    cout &lt;&lt; endl;
-    carrots = carrots - 1;
-    cout &lt;&lt; &quot;Crunch,crunch.Now I have &quot; &lt;&lt; carrots &lt;&lt; &quot; carrots.&quot; &lt;&lt; endl;
-
+    double area;
+    cout &lt;&lt; &quot;Enter the floor area, in square feet, of your home: &quot;;
+    cin &gt;&gt; area;
+    double side;
+    side = sqrt(area);
+    cout &lt;&lt; &quot;That&#39;s the equivalent of a square &quot; &lt;&lt; side &lt;&lt; &quot; feet to the side.&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;How fascinating&quot; &lt;&lt; endl;
     return 0;
 &#125;
 </code></pre>
