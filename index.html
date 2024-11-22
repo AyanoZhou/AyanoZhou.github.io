@@ -238,7 +238,7 @@ int main()
         
         <span class="tag">
             
-            <a href="/tags/C/" style="color: #03a9f4">C++</a>
+            <a href="/tags/C/" style="color: #00a596">C++</a>
         </span>
         
     </div>
@@ -322,11 +322,123 @@ int stonetolb(int sts)
         
         <span class="tag">
             
-            <a href="/tags/C/" style="color: #ffa2c4">C++</a>
+            <a href="/tags/C/" style="color: #00a596">C++</a>
         </span>
         
     </div>
     <a href="/2024/11/22/C++%E5%AD%A6%E4%B9%A03/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2024/11/22/C++%E7%BB%83%E4%B9%A0/">
+        <h2 class="post-title">C++练习</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/C/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                C++
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/11/22
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h3 id="编写一个程序，让用户输入其年龄，然后显示该年龄包含多少个月"><a href="#编写一个程序，让用户输入其年龄，然后显示该年龄包含多少个月" class="headerlink" title="编写一个程序，让用户输入其年龄，然后显示该年龄包含多少个月"></a>编写一个程序，让用户输入其年龄，然后显示该年龄包含多少个月</h3><pre><code class="C++">#include &lt;iostream&gt;
+int ageToMonth(int);
+
+
+int main()
+&#123;
+    using namespace std;
+    int age;
+    cout &lt;&lt; &quot;Enter your age: &quot;;
+    cin &gt;&gt; age;
+    int month = ageToMonth(age);
+    cout &lt;&lt; &quot;Your age in months is &quot; &lt;&lt; month &lt;&lt; endl;
+    return 0;
+&#125;
+
+int ageToMonth(int a)
+&#123;
+    return a * 12;
+&#125;
+</code></pre>
+<h3 id="编写一个程序，其中的main-调用一个用户定义的函数，以摄氏温度值为参数，返回相应的华氏温度值"><a href="#编写一个程序，其中的main-调用一个用户定义的函数，以摄氏温度值为参数，返回相应的华氏温度值" class="headerlink" title="编写一个程序，其中的main()调用一个用户定义的函数，以摄氏温度值为参数，返回相应的华氏温度值"></a>编写一个程序，其中的main()调用一个用户定义的函数，以摄氏温度值为参数，返回相应的华氏温度值</h3><pre><code class="C++">#include &lt;iostream&gt;
+double Tem(double);
+
+int main()
+&#123;
+    using namespace std;
+    double S;
+    cout &lt;&lt; &quot;Please enter a Celsius value: &quot;;
+    cin &gt;&gt; S;
+    cout &lt;&lt; endl;
+    double H = Tem(S);
+    cout &lt;&lt; S &lt;&lt; &quot; degrees Celsius is &quot; &lt;&lt; H &lt;&lt; &quot; degrees Fahrenheit.&quot;; 
+    return 0;
+&#125;
+
+double Tem (double x)
+&#123;
+    return x * 1.8 + 32.0;
+&#125;
+</code></pre>
+<h3 id="编写一个程序，要求用户输入小时数和分钟数。在main-函数中，将这两个值传递给一个void函数"><a href="#编写一个程序，要求用户输入小时数和分钟数。在main-函数中，将这两个值传递给一个void函数" class="headerlink" title="编写一个程序，要求用户输入小时数和分钟数。在main()函数中，将这两个值传递给一个void函数"></a>编写一个程序，要求用户输入小时数和分钟数。在main()函数中，将这两个值传递给一个void函数</h3><pre><code class="C++">#include &lt;iostream&gt;
+void Time(int,int);
+
+int main()
+&#123;
+    using namespace std;
+    int Hour;
+    int Min;
+    cout &lt;&lt; &quot;Enter the number of hours: &quot;;
+    cin &gt;&gt; Hour;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &quot;Enter the number of minutes: &quot;;
+    cin &gt;&gt; Min;
+    cout &lt;&lt; endl;
+    Time(Hour,Min);
+    return 0;
+&#125;
+
+void Time(int H,int M)
+&#123;
+    using namespace std;
+    cout &lt;&lt; &quot;Time: &quot; &lt;&lt; H &lt;&lt; &quot;:&quot; &lt;&lt; M;
+&#125;
+</code></pre>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/C/" style="color: #00a596">C++</a>
+        </span>
+        
+    </div>
+    <a href="/2024/11/22/C++%E7%BB%83%E4%B9%A0/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
@@ -403,7 +515,7 @@ int main(void) //函数头
         
         <span class="tag">
             
-            <a href="/tags/C/" style="color: #ffa2c4">C++</a>
+            <a href="/tags/C/" style="color: #00a596">C++</a>
         </span>
         
     </div>
@@ -452,7 +564,7 @@ int main(void) //函数头
         
         <span class="tag">
             
-            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #ff7d73">闲聊</a>
+            <a href="/tags/%E9%97%B2%E8%81%8A/" style="color: #00bcd4">闲聊</a>
         </span>
         
     </div>
